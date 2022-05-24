@@ -1,0 +1,25 @@
+const BASE_URL =
+    "https://kox947ka1a.execute-api.ap-northeast-2.amazonaws.com/prod/users";
+
+const x_auth_token = "9ac6d079-e1d5-42b6-898b-4a704eddc222";
+
+curl -X POST "https://kox947ka1a.execute-api.ap-northeast-2.amazonaws.com/prod/users"/start \
+     -H 'X-Auth-Token: 9ac6d079-e1d5-42b6-898b-4a704eddc222' \
+     -H 'Content-Type: application/json' \
+     -d '{
+         "problem": 1
+     }'
+
+
+
+curl -X GET https://kox947ka1a.execute-api.ap-northeast-2.amazonaws.com/prod/users/trucks \
+     -H 'Authorization: 9ac6d079-e1d5-42b6-898b-4a704eddc222' \
+     -H 'Content-Type: application/json'
+
+
+curl -X PUT https://kox947ka1a.execute-api.ap-northeast-2.amazonaws.com/prod/users/simulate \
+-H 'Authorization: 9ac6d079-e1d5-42b6-898b-4a704eddc222' \
+    -H 'Content-Type: application/json' \
+-d '{
+"commands": []
+}'
