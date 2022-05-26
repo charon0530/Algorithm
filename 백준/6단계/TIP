@@ -1,0 +1,7 @@
+.split(/[^*]/) <-꿀기능
+
+function getKeyByValue(object, value) {
+  return Object.keys(object).filter(key => object[key] === value);
+}
+
+a1.every((v,i)=> v === a2[i]); //배열비교

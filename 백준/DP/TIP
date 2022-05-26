@@ -7,6 +7,8 @@ dp 돌 때 한번사용 가능인지 여러번인지 확인
 ex 평범한 배낭문제를 1~k까지하면 2차원
 K~1 까지 하면 1차원으로 표현가능
 
+dp확인
+https://zzonglove.tistory.com/13
 https://chanhuiseok.github.io/posts/improve-6/
 
 DFS는 가지를 뻗기 전에 체크하는 것이 더 효율적
