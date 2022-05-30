@@ -16,7 +16,6 @@ function solution(input) {
         }
         num++;
     }
-    return num;
 }
 
 console.log(solution(param));
