@@ -21,6 +21,7 @@ function solution(input) {
         inputList.push(Number(input[i]));
     }
     inputList.sort((a, b) => a - b);
+
     let str = "";
     let list = [];
     for (let i = 1; i < N; i++) {
