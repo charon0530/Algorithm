@@ -1,3 +1,4 @@
+//SET을 이용해서 해결하였으나 그래도 느리긴 함
 var fs = require("fs");
 var param = fs
     .readFileSync(__dirname + "/ttt.txt") // "/dev/stdin"

@@ -40,6 +40,7 @@ function solution(n, start, end, roads, traps) {
     while (heap.GetLength()) {
         let [cur_cost, cur_node, cur_state] = heap.Delete();
         if (cur_node === end) return cur_cost;
+        if (visited[cur_node][cur_state] === 1) continue;
         visited[cur_node][cur_state] = true;
 
         if (traps.indexOf(cur_node) !== -1)
