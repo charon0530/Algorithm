@@ -14,6 +14,8 @@ function solution(a) {
             right_big.push(a[a.length - i - 1]);
         }
     }
+    console.log(left_big);
+    console.log(right_big);
     return new Set([...left_big, ...right_big]).size;
 }
 
