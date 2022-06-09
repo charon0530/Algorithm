@@ -32,6 +32,8 @@ function solution(alp, cop, problems = []) {
             }
         }
     }
+    // 순서를 바꿔서 탐색하면 더 빠를 듯 "백준/DP/사탕가게" 참조
+    // 전체를 돌면서 problems를 체크하는 것이 아닌 problems를 돌면서 조건에 만족하는 부분을 체크
     dp2 = dp.map((line) => line.map((x) => (x === 999 ? "*" : x)));
     console.table(dp2);
     return dp[target_alp][target_cop];
