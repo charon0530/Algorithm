@@ -1,0 +1,11 @@
+힙 구현할 때 작거나 or 크거나 로 생각하기보단 '좋다'라고 생각하는 게 더 직관적임
+
+힙 push pop
+1. push or pop을 한다.
+2. curIdx parIdx / curIdx leftIdx rightIdx를 설정
+3. 정리(스왑 while) break가 없는 구간은 인덱스 갱신
+
+
+* 자식 조건 확인할 때 "if(!this.list[leftIdx])"로 사용하면 0 들어올 때 문제 됨
+* 따라서 "if(this.list[leftIdx] === undefined)"로 사용해야 함!
+* 가운데를 말해요 참고
