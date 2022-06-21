@@ -44,7 +44,7 @@ function solution(input) {
             //     distArr[next] = newCost;
             //     queue.push([next, newCost]);
             // }
-            distArr[next] = newCost;
+
             queue.push([next, newCost]);
         }
     }
