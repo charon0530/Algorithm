@@ -1,3 +1,6 @@
+//DFS는 ch가 아니라 visited
+//BFS는 visited가 아니라 ch => BFS도 visited로 만들 수 있음
+
 var fs = require("fs");
 var param = fs
     .readFileSync(__dirname + "/ttt.txt") // "/dev/stdin"
@@ -51,6 +54,22 @@ function solution(input) {
             queue.push(next);
         }
     }
+    // ch.fill(0);
+    // const queue = [];
+    // ch[V] = 0;
+    // queue.push(V);
+    // let bfsStr = "";
+
+    // while (queue.length) {
+    //     const curNode = queue.shift();
+    //     if (ch[curNode] === 1) continue;
+    //     ch[curNode] = 1;
+    //     bfsStr += `${curNode} `;
+    //     for (const next of graph[curNode]) {
+    //         if (ch[next] === 1) continue;
+    //         queue.push(next);
+    //     }
+    // }
     console.log(dfsStr);
     console.log(bfsStr);
 }
