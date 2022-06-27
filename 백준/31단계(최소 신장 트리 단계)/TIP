@@ -1,0 +1,2 @@
+union find 할 때 
+union 인자 값은 항상 find로 찾은 대표가 되어야 함
