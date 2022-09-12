@@ -2,13 +2,16 @@ function solution(list) {
     const newList = [];
     for (let i = 0; i < list.length; i++) {
         const curTarget = list[i];
+        // curTarget[5] = "test";
+        // console.log(curTarget);
+
         const NAME = curTarget[0];
         let GRADES = curTarget.slice(1);
 
         GRADES = GRADES.map((val, idx) => [val, idx]);
 
         GRADES.sort((a, b) => b[0] - a[0]);
-        //console.log("sorted: ", GRADES);
+        console.log("sorted: ", GRADES);
         const gradeSTR = GRADES.reduce((acc, val) => {
             if (val[0] === 0) {
                 acc += "_";
@@ -27,6 +30,6 @@ function solution(list) {
 }
 
 solution([
-    ["사과", 2, 1, 0, 0],
+    ["사과", 2, 1, 2, 0],
     ["바나나", 3, 1, 0, 0],
 ]);
